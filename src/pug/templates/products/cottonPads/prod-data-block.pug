@@ -1,0 +1,27 @@
+section.prod-data-wrap
+  .container
+    .prod-data
+      h2.prod-data_title.title-3 Our offer
+      .prod-data_tables.js-tabs-content(data-tab-content="product")
+        table.table.prod-data_table--vis
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            //- +prodItem("id", img, "name", "art", "gr", "pcs", "box", "pallet")
+            +prodItem("cotton-Pads-NC200-01", "./img/products/prod-1-3.jpg", "Cotton Pads", "NC200-01", "80 pcs.", "80", "-", "-")
+            +prodItem("cotton-Pads-NC200-02", "./img/products/prod-1-3.jpg", "Cotton Pads", "NC200-02", "100 pcs.", "100", "-", "-")
+            +prodItem("cotton-Pads-NC200-03", "./img/products/prod-1-3.jpg", "Cotton Pads", "NC200-03", "120 pcs.", "120", "-", "-")

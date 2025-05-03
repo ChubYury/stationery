@@ -1,0 +1,59 @@
+.table
+  width: 100%
+  &_
+    &head-caption
+      display: none
+    &row
+      display: flex
+      flex-direction: column
+      margin-bottom: 50px
+    &cell
+      position: relative
+      display: flex
+      justify-content: space-between
+      padding: 30px 20px
+      background: var(--theme-color-white)
+      color: var(--text-color-base)
+      font-family: OpenSans
+      font-weight: 400
+      font-size: 16px
+      vertical-align: middle
+      box-shadow: 0px 8px 12px 0px rgba(123,196,255,0.1)
+      &:first-child
+        border-radius: 15px 15px 0 0
+        &::before
+          display: none
+      &:last-child
+        border-radius: 0 0 15px 15px
+        &::before
+          display: none
+      &::before
+        position: absolute
+        content: ''
+        width: 95%
+        height: 1px
+        bottom: 1px
+        left: 50%
+        transform: translateX(-50%)
+        background: var(--br-color-three)
+      &--
+        &name
+          background: var(--theme-gradient-base)
+    &cell-head
+      font-weight: 600
+    &cell-name
+      margin: 0 auto
+      color: var(--theme-color-white)
+      font-family: OpenSans
+      font-weight: 600
+      font-size: 16px
+    &cell-box
+      display: flex
+      margin:0 auto
+    &cart
+      margin: 0px 0 0 10px
+    &cart
+      background: var(--btn-gradient-secondary)
+    &cart-icon
+      width: 20px
+      height: 20px    

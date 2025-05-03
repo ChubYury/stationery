@@ -1,0 +1,45 @@
+:root {
+  --mq-size-sm: 540px;
+  --mq-size-md: 716px;
+  --mq-size-lg: 960px;
+  --mq-size-xl: 1170px;
+  --mq-size-xxl: 1320px;
+
+  --theme-color-white: #fff;
+  --theme-color-black: #000;
+  --theme-color-error: #ff0000;
+  --theme-color-base: #F6F9FF;
+  --theme-color-secondary: #7BC3FF;
+  --theme-color-three: #ff9966;
+  --theme-color-four: #98ff98;
+  --theme-color-five: #42AAFF;
+  --theme-color-six: #e6fffa;
+
+  --theme-gradient-base: linear-gradient(130deg, #59a4fc, #7bc3ff);
+  
+  --br-color-base: #7BC3FF;
+  --br-color-secondary: #59A4FC;
+  --br-color-three: #F0F3FA;
+  --br-color-six: #FFD6DF;
+  --br-color-seven: #C2C6CD;
+  --br-color-eight: #59A4FC;
+  
+  --text-color-base: #3C5185;
+  --text-color-secondary: #1D3673;
+  --text-color-three: #59A4FC;
+  --text-color-four: #CBCFD3;
+  --text-color-five: #7BC3FF;
+  --text-color-six: #2C79D3;
+  --text-color-disabled: #C2C6CD;
+  
+  --btn-color-base: #57A3FC;
+  --btn-color-secondary: #7BC3FF;
+  --btn-color-three: #C2C6CD;
+  --btn-color-four: #4089DD;
+  --btn-color-five: #2C79D3;
+  --btn-color-six: #EAF6FF;
+
+  --btn-gradient-base: linear-gradient(122deg, #3C90F1, #57ABF0, #59A4FC, #7BC3FF, #70B2FF, #91CDFF);
+  --btn-gradient-secondary: linear-gradient(122deg, #FB9CD2, #FCBDE1);
+  --btn-gradient-three: linear-gradient(122deg, #f08bc4, #FCBDE1);
+}

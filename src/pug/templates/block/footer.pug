@@ -1,0 +1,26 @@
+footer.footer-wrap 
+  .container
+    .footer
+      a.footer_logo(href='./')
+        img.footer_logo-image(src='@img/logo.svg')
+      nav.footer_nav
+        if notLinkLogo == true
+          a.footer_item(href='./') Home
+          a.footer_item(href='#about-us') About Us
+          a.footer_item(href='#catalog') Catalog
+          a.footer_item(href='#why-us') Why Us
+          a.footer_item(href='#contacts') Contacts
+        else
+          a.footer_item(href='./') Home
+          a.footer_item(href='./#about-us') About Us
+          a.footer_item(href='./#catalog') Catalog
+          a.footer_item(href='./#why-us') Why Us
+          a.footer_item(href='./#contacts') Contacts
+        .footer_item
+          a.footer_soc-link(target="_blank" href="https://www.facebook.com/")
+            img.footer_soc-icon(src="./images/icons/icons.svg#soc-fb")
+          a.footer_soc-link(target="_blank" href="https://www.youtube.com/")
+            img.footer_soc-icon(src="./images/icons/icons.svg#soc-yt")
+.btn-top_wrap
+  button.btn-top_body.js-btn-up
+    img.btn-top_icon(src="./images/icons/icons.svg#arrowfatup")

@@ -1,0 +1,17 @@
+extends ./base/template
+
+block title
+  title=  "Cart"
+    
+block header 
+  - const linkLogo = true
+  - const lang = 'eng'
+  include block/header
+
+block main
+  main.page 
+    include cart/shoping-block
+    include cart/order-block
+
+block footer 
+  include block/footer

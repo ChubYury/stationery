@@ -1,0 +1,30 @@
+mixin prodItem(id, img, name, art, gr, pcs, box, pallet)
+  tr.table_row.js-product-item(data-prod-id=id)
+    td.table_cell.table_cell--name(data-name=name)
+      span(data-img=img)
+      span.table_cell-name= name
+    td.table_cell(data-art=art)
+      span.table_cell-head.table_cell--min Art.
+      span.table_cell-value= art
+    td.table_cell.table_cell--med(data-gr=gr)
+      span.table_cell-head Gr.
+      span.table_cell-value= gr 
+    td.table_cell.table_cell--min(data-pcs=pcs)
+      span.table_cell-head Pcs/Box
+      span.table_cell-value= pcs
+    td.table_cell.table_cell--min(data-box=box)
+      span.table_cell-head Box/Pallet
+      span.table_cell-value= box
+    td.table_cell.table_cell--min(data-pallet=pallet)
+      span.table_cell-head Pcs/Pallet
+      span.table_cell-value= pallet
+    td.table_cell.table_cell--end(data-num="0")
+      .table_cell-box
+        p.counter.js-counter
+          button.counter_minus(disabled="true") -
+          span.counter_num 0
+          button.counter_plus +
+        button.table_cart.btn-base.js-add-cart(disabled="true") 
+          img.table_cart-icon(src="./images/icons/icons.svg#heart")
+
+

@@ -1,0 +1,18 @@
+extends ./base/template
+
+block title
+  title=  "Cotton Pads"
+    
+block header 
+  - const linkLogo = false
+  - const lang = 'eng'
+  include block/header
+
+block main
+  main.page 
+    include products/cottonPads/prod-desc-block
+    include products/cottonPads/prod-data-block
+    include products/cottonPads/galeries
+
+block footer 
+  include block/footer

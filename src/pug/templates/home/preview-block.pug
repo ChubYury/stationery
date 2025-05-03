@@ -1,0 +1,30 @@
+section.preview-wrap
+  .preview_decor
+    img.preview_decor-img(src='@img/prev-bg.jpg')
+  .container
+    .preview_block
+    .preview
+      h1.preview_title Novacare
+                    br
+                    |  Distribution
+      h5.preview_subtitle Wholesale supplies of wound care products and 
+                        | dietary supplements for medical and veterinary uses.
+                        | Create youre wishlist and we will come back with our 
+                        | best offer
+      a.preview_btn.btn-base(href='#catalog') Product Catalogue
+      a.preview_btn.preview_btn--second.btn-base(href='#about-us') About Us
+    .quick-mess-wrap
+      .quick-mess
+        button.quick-mess_btn-close
+            img.quick-mess_btn-close-icon(src="./images/icons/icons.svg#close-white")
+        h6.quick-mess_title.js-close-quick-mess 
+          img.quick-mess_icon(src="./images/icons/icons.svg#mail-white")
+          span Quick message
+        form.quick-mess_form.form.js-form#form-mess(action="/files/sendMessageSMTP.php", method="post")
+          .form_field
+            input.form_inp#messInupEmail(type="email" name="email" data-req="email" placeholder="Your email" required)
+          .form_field
+            textarea.form_inp.form_inp--ta#quickMessage.textarea-base(type="text" name="message" placeholder="Your message" )
+          .form_field.form_field--recap
+            .form_grecaptcha.js-recaptcha#recaptcha-2(data-tabindex=1)
+          button.form_btn-send.btn-base() Send

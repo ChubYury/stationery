@@ -1,0 +1,20 @@
+extends ./base/template
+
+block title
+  title=  "Home"
+    
+block header 
+  - const notLinkLogo = true
+  - const lang = 'eng'
+  include block/header
+
+block main
+  main.page 
+    include home/preview-block
+    include home/about-us-block 
+    include home/catalog-block
+    include home/why-us-block
+    include home/contact-block
+
+block footer 
+  include block/footer

@@ -1,0 +1,18 @@
+extends ./base/template
+
+block title
+  title=  "Cohesive Bandage"
+    
+block header 
+  - const linkLogo = false
+  - const lang = 'eng'
+  include block/header
+
+block main
+  main.page 
+    include products/cohesiveBandage/prod-desc-block
+    include products/cohesiveBandage/prod-data-block
+    include products/cohesiveBandage/galeries
+
+block footer 
+  include block/footer

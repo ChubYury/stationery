@@ -1,0 +1,64 @@
+.modal-wrap
+  .container
+    .modal-form.form#modal-form-login
+      div
+        form.form_body.js-form#form-login(action="/files/sendMailSMTP.php", method="post")
+          button.form_btn-close(data-fancybox-close="")
+            img.form_btn-close-icon(src="./images/icons/icons.svg#close")
+          h3.form_title Log In
+          .form_field
+            label.form_label(for="loginName") Login:
+            input.form_inp#loginName(type="text" name="name" data-req="name" placeholder="Login" autocomplete="username" required)
+          .form_field
+            label.form_label.js-label-pass(for="loginPass") Password:
+              button.form_btn-show-pass.js-show-pass(type="button" data-show="false")
+                img.form_eye(src='./images/icons/icons.svg#eye')
+                img.form_eye.form_eye--not(src='./images/icons/icons.svg#eye-not')
+            input.form_inp#loginPass(type="password" name="passsword" data-req="password" placeholder="Password" autocomplete="current-password" required)
+          button.form_btn-subm.btn-base(type="submit") Log in
+          button.form_link-access.js-open-form(data-open="modal-form-signup" data-fancybox-close="") Get access to the site
+    .modal-form.form#modal-form-signup
+      div
+        form.form_body.js-form(action="" method="")
+          button.form_btn-close(data-fancybox-close="")
+            img.form_btn-close-icon(src="./images/icons/icons.svg#close")
+          h3.form_title Log In
+          .form_field
+            input.form_inp#singnupEmail(type="email" name="signEmail" data-req="email" placeholder="Enter email" required)
+          .form_field
+            .form_grecaptcha.js-recaptcha#recaptcha-1(data-tabindex=0 data-req="grecaptcha")
+          button.form_btn-back.btn-three.js-open-form(data-open="modal-form-login" data-fancybox-close="") Back
+          button.form_btn-send.btn-base() Send  
+    .modal-send#modal-send-cart
+      div
+        .modal-send_body
+          button.modal-send_btn-close(data-fancybox-close="")
+            img.modal-send_btn-close-icon(src="./images/icons/icons.svg#close-gray")
+          .modal-send_img-wrap
+            img.modal-send_img-body(src='@img/heart.png')
+          h3.modal-send_title Thank you for your wishlist.
+                      br
+                      | We will come back with our best offer. 
+          p.modal-send_text Have a nice day, 
+            span.modal-send_text--strong Novacare Distribution!
+          
+.modal-cart.js-modal-cart
+  .modal-cart_overlay
+    .modal-cart_content
+      .modal-cart_title Cart
+      button.modal-cart_btn-close.js-cart-modal-close
+        img.modal-cart_btn-close-icon(src="./images/icons/icons.svg#close")
+      .modal-cart_box
+        .modal-cart_item.js-cart-item-tmp(data-id)
+          .modal-cart_item-prev
+            img.modal-cart_item-img.js-product-img(src='' data-img)
+          h6.modal-cart_item-title(data-name)
+          p.modal-cart_item-art(data-art)
+          p.modal-cart_item-quant 
+            span(data-quant) 10  
+            span qty.
+          button.modal-cart_btn-del.js-del-btn-cart-modal
+            img.modal-cart_btn-del-icon(src="./images/icons/icons.svg#trash")
+            span Delete
+      a.modal-cart_btn.btn-three(href="/cart.html") Place an order
+      button.modal-cart_btn.btn-base.js-cart-modal-close() Continue shopping

@@ -1,0 +1,21 @@
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=0")
+    meta(name="description" content="Novacar")
+    meta(name="keywords" content="")
+    //- color the address bar
+    //- meta(name="theme-color" content="#8F67A4")
+    block title
+    //- link(rel="icon" type="image/png" sizes="192x192" href="@img/favicon.png")
+    link(rel="stylesheet" type="text/css" media="all" href='./css/style.min.css')
+    script(type="text/javascript", src='./js/app.min.js' defer)
+    script(type="text/javascript").
+        var onloadCallback = function() {
+        const rec1 = document.getElementById("recaptcha-1");
+        const rec2 = document.getElementById("recaptcha-2");
+        if (!rec1) return;
+        else if (!rec2) return;
+        grecaptcha.render('recaptcha-1', {'sitekey' : '6Lf0T9UqAAAAABEjgE_29bFYCBsz975swSDJNGCb', 'hl' : 'en'});
+        grecaptcha.render('recaptcha-2', {'sitekey' : '6Lf0T9UqAAAAABEjgE_29bFYCBsz975swSDJNGCb', 'hl' : 'en'});
+        };

@@ -1,0 +1,41 @@
+.prod-data-wrap
+  padding: 50px 0 50px 0
+
+.prod-data
+  display: flex
+  flex-direction: column
+  padding: 0 50px 0 50px
+  &_
+    &title
+      margin: 15px auto 40px auto
+    &table
+      display: none
+      &.is-active
+        display: table
+
+//********************************************
+
+.prod-text
+  display: flex
+  flex-direction: column
+  &_
+    &decor
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      z-index: -1
+    &title
+      margin: 15px auto 40px auto
+      &::before
+        background: var(--br-color-six)
+    &body
+      color: var(--text-color-base)
+      font-family: OpenSans
+      font-weight: 400
+      font-size: 13px
+      line-height: 142%
+      text-align: justify
+      margin-bottom: 50px
+  p
+    margin-bottom: 20px
+

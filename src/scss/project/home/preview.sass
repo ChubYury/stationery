@@ -1,0 +1,103 @@
+.preview
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-content: center
+  height: calc(100% - 62px)
+  text-align: center
+  &_
+    &block
+      width: 100%
+      height: 78px
+    &title
+      color: var(--text-color-secondary)
+      font-family: Afacad
+      font-weight: 700
+      font-size: 55px
+      margin-bottom: 40px
+    &subtitle
+      color: var(--text-color-base)
+      font-family: OpenSans
+      font-weight: 400
+      font-size: 16px
+      line-height: 142%
+      margin-bottom: 40px
+    &btn
+      margin: 0 auto 20px auto
+      padding: 12px 30px
+      font-size: 22px
+      font-weight: 800
+      &--
+        &second
+          background: var(--btn-gradient-three)
+          border: 2px solid var(--btn-gradient-three)
+          box-shadow: 0px 4px 10px 5px rgba(29, 54, 115, 0.1)
+          transition: .3s
+          &::after
+            display: none
+          &:active
+            box-shadow: none
+
+//***************************************************
+
+.quick-mess-wrap
+  position: absolute
+  width: 100%
+  height: 100%
+  right: 1px
+  bottom: 0
+  overflow: hidden
+  pointer-events: none
+
+.quick-mess
+  position: absolute
+  max-width: 349px 
+  right: 0
+  bottom: -366px
+  transition: .3s
+  z-index: 1
+  pointer-events: auto
+  &_
+    &btn-close
+      position: absolute
+      width: 20px
+      height: 20px
+      top: 8px
+      right: 22px
+      background: transparent
+      pointer-events: none
+    &title
+      padding: 8px 15px 10px 15px
+      border-radius: 8px 24px 0 0
+      background: var(--theme-gradient-base)
+      color: var(--theme-color-white)
+      font-family: OpenSans
+      font-weight: 400
+      font-size: 20px
+      cursor: pointer
+    &icon
+      width: 25px
+      margin-right: 5px
+  &.is-open
+    bottom: 0px
+
+  .form
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 10px
+    padding: 14px 22px 24px 22px
+    background: var(--theme-color-white)
+    border: 1px solid var(--br-color-eight)
+    &_
+      &inp
+        padding: 6px 20px
+        border-radius: 10px
+        &--
+          &ta
+            border-radius: 16px
+            height: 124px
+      &btn-send
+        padding: 14px 140px 14px 100px
+

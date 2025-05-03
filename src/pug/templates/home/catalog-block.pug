@@ -1,0 +1,72 @@
+section.catalog-wrap#catalog
+  .container
+    .catalog
+      h2.catalog_title.title-3 catalog
+      ul.catalog-filter.js-cat-filter
+        li.catalog-filter_item.btn-secondary(data-filter="all")
+          img.catalog-filter_item-img(src='./images/icons/icons.svg#all')
+          span.catalog-filter_item-text All
+        li.catalog-filter_item.btn-secondary(data-filter="cottonProducts")
+          img.catalog-filter_item-img(src='./images/icons/icons.svg#tree')
+          span.catalog-filter_item-text Cotton Products
+        li.catalog-filter_item.btn-secondary(data-filter="dressingProducts")
+          img.catalog-filter_item-img(src='./images/icons/icons.svg#gauze')
+          span.catalog-filter_item-text Dressing Products
+        li.catalog-filter_item.btn-secondary(data-filter="foodSupplement")
+          img.catalog-filter_item-img(src='./images/icons/icons.svg#medicine-bottle')
+          span.catalog-filter_item-text Food Supplement
+        li.catalog-filter_item.btn-secondary(data-filter="other")
+          img.catalog-filter_item-img(src='./images/icons/icons.svg#experiment-one')
+          span.catalog-filter_item-text Other 
+      .catalog_card-box.js-filter-box
+        a.card.catalog_card(href='/cottonWool.html' data-category="cottonProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-1.jpg')
+          p.card_title Cotton Wool
+        a.card.catalog_card(href='/cottonBuds.html' data-category="cottonProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-1-2.webp')
+          p.card_title Cotton Buds
+        a.card.catalog_card(href='/cottonPads.html' data-category="cottonProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-1-3.jpg')
+          p.card_title Cotton Pads
+        a.card.catalog_card(href='/gauzeBandages.html' data-category="dressingProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-2.jpg')
+          p.card_title Gauze Bandages
+        a.card.catalog_card(href='/gauzeRolls.html' data-category="dressingProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-2-1.png')
+          p.card_title Gauze Rolls
+        a.card.catalog_card(href='/gauzeSwabs.html' data-category="dressingProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-2-2.jpg')
+          p.card_title Gauze Swabs
+        a.card.catalog_card(href='/nonWovenSwabs.html' data-category="dressingProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-2-3.png')
+          p.card_title Non Woven Swabs
+        a.card.catalog_card(href='/cohesiveBandage.html' data-category="dressingProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-2-4.jpg')
+          p.card_title Cohesive Bandage
+        a.card.catalog_card(href='/orthopedicPadding.html' data-category="dressingProducts")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-2-5.webp')
+          p.card_title Orthopedic padding
+        a.card.catalog_card(href='/foodSupplement.html' data-category="foodSupplement")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-3.jpg')
+          p.card_title Food Supplement
+        a.card.catalog_card(href='/faceMask.html' data-category="other")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-4.png')
+          p.card_title Face Mask
+        a.card.catalog_card(href='/handSanitizer.html' data-category="other")
+          .card_img-wrap
+            img.card_img(src='@img/products/prod-4-1.jpg')
+          p.card_title Hand Sanitizer
+
+
+          
