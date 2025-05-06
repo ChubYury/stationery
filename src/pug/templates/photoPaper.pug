@@ -1,0 +1,18 @@
+extends ./base/template
+
+block title
+  title=  "Photo paper"
+    
+block header 
+  - const linkLogo = false
+  - const lang = 'eng'
+  include block/header
+
+block main
+  main.page 
+    include products/photoPaper/prod-desc-block
+    include products/photoPaper/prod-data-block
+    include products/photoPaper/galeries
+
+block footer 
+  include block/footer

@@ -3,11 +3,11 @@
   display: flex
   min-height: 568px
   height: 100vh
-
+  
 .preview
   &_
     &decor
-      position: absolute
+      position: fixed
       width: 100%
       height: 100%
       z-index: -1
@@ -29,6 +29,7 @@
 .about-us-wrap
   padding: 50px 0 20px 0
   position: relative
+  background: var(--theme-color-base)
   
 .about-us
   &_
@@ -45,24 +46,27 @@
 
 .catalog-wrap
   padding: 50px 0 20px 0
+  background: var(--theme-color-base)
 
 //***********************************************************
 
 .why-us-wrap
   position: relative
   padding: 40px 0 10px 0
+  background: var(--theme-color-base)
 .why-us
   &_
     &decor
       position: absolute
       top: -94px
       left: -150px
-      z-index: -1
+      z-index: 0
 
 //***********************************************************
 
 .contact-wrap
   padding: 50px 0 10px 0
+  background: var(--theme-color-base)
 
 //***********************************************************
 

@@ -1,0 +1,48 @@
+section.prod-data-wrap
+  .container
+    .prod-data
+      h2.prod-data_title.title-3 Our offer
+      .prod-data_tables.js-tabs-content(data-tab-content="product")
+        table.table.prod-data_table
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            //- +prodItem("id", img, "name", "art", "gr", "pcs", "box", "pallet")
+            +prodItem("ruler-8815-50411", "./img/products/prod-2-3.jpg", "Ruler 8815", "50411", "15 cm.", "20", "2400", "1000")
+            +prodItem("ruler-8015-91513", "./img/products/prod-2-3.jpg", "Ruler 8015", "91513", "15 cm.", "48", "100", "1500")
+            +prodItem("ruler-749-110374", "./img/products/prod-2-3.jpg", "Rule 749", "110374", "10 cm.", "25", "1000", "10000")
+        table.table.prod-data_table
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            +prodItem("ruler-500-110608", "./img/products/prod-2-3.jpg", "Ruler 500", "110608", "100 cm.", "10", "1000", "10")
+            +prodItem("ruler-1000-110608", "./img/products/prod-2-3.jpg", "Ruler 1000", "110608", "100 cm.", "10", "1000", "10")
+            

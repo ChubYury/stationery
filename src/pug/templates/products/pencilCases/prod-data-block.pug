@@ -1,0 +1,47 @@
+section.prod-data-wrap
+  .container
+    .prod-data
+      h2.prod-data_title.title-3 Our offer
+      .prod-data_tables.js-tabs-content(data-tab-content="product")
+        table.table.prod-data_table
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            //- +prodItem("id", img, "name", "art", "gr", "pcs", "box", "pallet")
+            +prodItem("pencilCases-Irbis-99518", "./img/products/prod-2-6.jpg", "Pencil cases Irbis", "99518", "19,5 * 4 cm.", "5", "40", "400")
+            +prodItem("pencilCases-TUBUS-119108", "./img/products/prod-2-6.jpg", "Pencil cases TUBUS", "119108", "20 * 7 cm.", "3", "240", "1200")
+        table.table.prod-data_table
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            +prodItem("pencilCases-931217-119464", "./img/products/prod-2-6.jpg", "Pencil cases 931217", "119464", "21 * 13 cm.", "24", "160", "200")
+            +prodItem("pencilCases-931242-119534", "./img/products/prod-2-6.jpg", "Pencil cases 931242", "119534", "21 * 13.5 cm.", "24", "160", "200")
+            

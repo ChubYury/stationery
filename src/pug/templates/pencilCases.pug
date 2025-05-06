@@ -1,0 +1,18 @@
+extends ./base/template
+
+block title
+  title=  "Pencil case"
+    
+block header 
+  - const linkLogo = false
+  - const lang = 'eng'
+  include block/header
+
+block main
+  main.page 
+    include products/pencilCases/prod-desc-block
+    include products/pencilCases/prod-data-block
+    include products/pencilCases/galeries
+
+block footer 
+  include block/footer

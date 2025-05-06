@@ -2,7 +2,7 @@ header.header-wrap#header-blk.js-head-scroll
   .container
     .header.js-head-scroll
       a.header_logo(href='./')
-        img.header_logo-image(src='@img/logo.svg' alt='logo')
+        img.header_logo-image(src='@img/logo.png' alt='logo')
       .header_content.js-menu-content
         nav.header_nav
           if notLinkLogo == true
@@ -17,13 +17,13 @@ header.header-wrap#header-blk.js-head-scroll
             a.header_item(href='./#catalog') Catalog
             a.header_item(href='./#why-us') Why Us
             a.header_item(href='./#contacts') Contacts
-          .header_btn-block
-            a.header_soc-link(target="_blank" href="https://www.facebook.com/")
-              img.header_soc-icon.map_contact-icon--img(src="./images/icons/icons.svg#soc-fb")
-            a.header_soc-link(target="_blank" href="https://www.youtube.com/")
-              img.header_soc-icon.map_contact-icon--img(src="./images/icons/icons.svg#soc-yt")
+          //- .header_btn-block
+          //-   a.header_soc-link(target="_blank" href="https://www.facebook.com/")
+          //-     img.header_soc-icon.map_contact-icon--img(src="./images/icons/icons.svg#soc-fb")
+          //-   a.header_soc-link(target="_blank" href="https://www.youtube.com/")
+          //-     img.header_soc-icon.map_contact-icon--img(src="./images/icons/icons.svg#soc-yt")
       button.header_btn-menu.btn-base.js-btn-menu
       a.header_btn.header_btn--second.btn-base.js-head-cart-btn(href='/cart.html' data-cart="true")
-        img.header_btn-img.cart-icon(src='./images/icons/icons.svg#heart')
+        img.header_btn-img.cart-icon(src='./images/icons/icons.svg#wishlist')
         span.header_btn-count
           span.header_btn-num.js-head-cart-num 0

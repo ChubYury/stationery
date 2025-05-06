@@ -1,0 +1,47 @@
+section.prod-data-wrap
+  .container
+    .prod-data
+      h2.prod-data_title.title-3 Our offer
+      .prod-data_tables.js-tabs-content(data-tab-content="product")
+        table.table.prod-data_table
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            //- +prodItem("id", img, "name", "art", "gr", "pcs", "box", "pallet")
+            +prodItem("paperBag-KGB-323815-49-117356", "./img/products/prod-4-2.jpg", "Paper bag KGB 323815-49", "117356", "32 х 15 х 38 cm.", "10", "100", "1000")
+            +prodItem("paperBag-KGB-324215-26-113641", "./img/products/prod-4-2.jpg", "Paper bag KGB 324215-26", "113641", "32 х 15 х 42 cm.", "10", "100", "1000")
+        table.table.prod-data_table
+          thead.table_head
+            tr.table_head-row
+              th.table_head-cell.table_head-cell--start 
+                span.table_head-caption Name
+              th.table_head-cell 
+                span.table_head-caption Art.
+              th.table_head-cell 
+                span.table_head-caption Gr.
+              th.table_head-cell 
+                span.table_head-caption Pcs/Box
+              th.table_head-cell 
+                span.table_head-caption Box/Pallet
+              th.table_head-cell 
+                span.table_head-caption Pcs/Pallet
+              th.table_head-cell 
+                span.table_head-caption Quant
+          tbody.table_body
+            //- +prodItem("id", img, "name", "art", "gr", "pcs", "box", "pallet")
+            +prodItem("paperBag-KGB-324215-27-113770", "./img/products/prod-4-2.jpg", "Paper bag KGB 324215-27", "113770", "32 х 15 х 42 cm.", "10", "100", "1000")
+            +prodItem("paperBag-KGB-324215-28-113771", "./img/products/prod-4-2.jpg", "Paper bag KGB 324215-28", "113771", "32 х 15 х 42 cm.", "10", "100", "1000")
