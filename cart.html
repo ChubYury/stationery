@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1, user-scalable=0"/>
+    <meta name="description" content="Novacar"/>
+    <meta name="keywords" content=""/>
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" media="all" href="./css/style.min.css?_v=20250513103439"/>
+    <script type="text/javascript" src="./js/app.min.js?_v=20250513103439" defer="defer"></script>
+    <script type="text/javascript">
+      var onloadCallback = function() {
+      const rec1 = document.getElementById("recaptcha-1");
+      const rec2 = document.getElementById("recaptcha-2");
+      if (!rec1) return;
+      else if (!rec2) return;
+      grecaptcha.render('recaptcha-1', {'sitekey' : '6Lf0T9UqAAAAABEjgE_29bFYCBsz975swSDJNGCb', 'hl' : 'en'});
+      grecaptcha.render('recaptcha-2', {'sitekey' : '6Lf0T9UqAAAAABEjgE_29bFYCBsz975swSDJNGCb', 'hl' : 'en'});
+      };
+    </script>
+  </head>
+  <body id="body">
+    <header class="header-wrap js-head-scroll" id="header-blk">
+      <div class="container">
+        <div class="header js-head-scroll"><a class="header_logo" href="./"><picture><source srcset="img/logo.webp" type="image/webp"><img class="header_logo-image" src="img/logo.png" alt="logo"/></picture></a>
+          <div class="header_content js-menu-content">
+            <nav class="header_nav"><a class="header_item" href="./">Home</a><a class="header_item" href="./#about-us">About Us</a><a class="header_item" href="./#catalog">Catalog</a><a class="header_item" href="./#why-us">Why Us</a><a class="header_item" href="./#contacts">Contacts</a>
+            </nav>
+          </div>
+          <button class="header_btn-menu btn-base js-btn-menu"></button><a class="header_btn header_btn--second btn-base js-head-cart-btn" href="/cart.html" data-cart="true"><img class="header_btn-img cart-icon" src="./images/icons/icons.svg#wishlist"/><span class="header_btn-count"><span class="header_btn-num js-head-cart-num">0</span></span></a>
+        </div>
+      </div>
+    </header>
+    <main class="page"> 
+      <section class="shoping-wrap"> 
+        <div class="container">
+          <div class="shoping_decor">
+            <svg width="1501" height="749" viewBox="0 0 1501 749" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.8171 430.224C137.866 613.583 1202.3 785.325 1301.47 741.076C1455.97 672.137 1610.09 141.56 1392.27 50.204C1298.01 10.6679 972.422 -10.3467 754.739 7.28077C532.065 25.3124 -163.595 71.9242 35.8171 430.224Z" fill="url(#paint0_linear_318_180)"></path>
+              <defs>
+                <linearGradient id="paint0_linear_318_180" x1="932.652" y1="676.505" x2="969.992" y2="403.195" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0.1"></stop>
+                  <stop offset="1" stop-color="white" stop-opacity="0.8"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="shoping">
+            <h2 class="shoping_title title-3">Wishlist List</h2>
+            <table class="table cart-data_table">
+              <thead class="table_head">
+                <tr class="table_head-row">
+                  <th class="table_head-cell table_head-cell--start"> <span class="table_head-caption">Product photo</span></th>
+                  <th class="table_head-cell table_head-cell--name"><span class="table_head-caption">Description</span></th>
+                  <th class="table_head-cell"><span class="table_head-caption">Gr.</span></th>
+                  <th class="table_head-cell table_head-cell--min"><span class="table_head-caption">Pcs/Pallet</span></th>
+                  <th class="table_head-cell table_head-cell--end"><span class="table_head-caption">Quant</span></th>
+                </tr>
+              </thead>
+              <tbody class="table_body">
+                <tr class="table_row js-card-item-template is-hidden" data-id="0">
+                  <td class="table_cell table_cell--start" data-img=""><img class="table_cell-img js-product-img" src=""/></td>
+                  <td class="table_cell table_cell--name" data-name="Medical Cotton Zig-Zag">
+                    <div class="table_cell-box"><span class="table_cell-name js-product-name">Medical Cotton Zig-Zag</span>
+                      <p class="table_cell-art" data-art="100"><span class="table_cell-attr">Art.  </span><span class="table_cell-value"> </span></p>
+                      <button class="btn-del" data-del-id="0"><img class="btn-del_img close-icon" src="./images/icons/icons.svg#close"/><span class="btn-del_text">Delete</span></button>
+                    </div>
+                  </td>
+                  <td class="table_cell" data-gr="100"><span class="table_cell-head">Gr.</span><span class="table_cell-value js-product-gr">100 </span></td>
+                  <td class="table_cell table_cell--min" data-pallet="1152"><span class="table_cell-head">Pcs/Pallet</span><span class="table_cell-value">1152</span></td>
+                  <td class="table_cell table_cell--end" data-quant="0">
+                    <p class="counter js-counter" data-num="0">
+                      <button class="counter_minus" disabled="true">-</button><span class="counter_num">0</span>
+                      <button class="counter_plus">+</button>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table><a class="shoping_btn btn-three" href="./#catalog">+ Add Product</a><a class="shoping_btn shoping_btn--second btn-base js-goto-link" data-goto="order-block">Send wishlist</a>
+          </div>
+        </div>
+      </section>
+      <section class="order-wrap" id="order-block">
+        <div class="container">
+          <div class="order">
+            <div class="order_title title-3">Contact Info</div>
+            <form class="form order_form js-form" id="order-form" action="/files/sendOrderSMTP.php" method="post">
+              <div class="form_field form_field--mini">
+                <label class="form_label" for="emailPhone">Email/Tel</label>
+                <input class="form_inp" id="emailPhone" type="text" name="email" data-req="name" placeholder="Email/Tel"/>
+              </div>
+              <div class="form_field form_field--mini">
+                <label class="form_label" for="Shipping">Shipping</label>
+                <div class="select-base">
+                  <select id="Shipping" name="shipppingSelect">
+                    <option value="">Select</option>
+                    <option value="EX Works, Riga (Latvia)">Delivery our place</option>
+                    <option value="Delivery to my place">Delivery to your place</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form_field">
+                <label class="form_label" for="orderMessage">Email/Tel</label>
+                <textarea class="form_inp textarea-base" id="orderMessage" type="text" name="message" placeholder="Order comment"></textarea>
+              </div>
+              <div class="form_field form_field--recap">
+                <button class="form_btn btn-base">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-wrap"> 
+      <div class="container">
+        <div class="footer"><a class="footer_logo" href="./"><picture><source srcset="img/logo.webp" type="image/webp"><img class="footer_logo-image" src="img/logo.png"/></picture></a>
+          <nav class="footer_nav"><a class="footer_item" href="./">Home</a><a class="footer_item" href="./#about-us">About Us</a><a class="footer_item" href="./#catalog">Catalog</a><a class="footer_item" href="./#why-us">Why Us</a><a class="footer_item" href="./#contacts">Contacts</a>
+            <div class="footer_item"><a class="footer_soc-link" target="_blank" href="https://www.facebook.com/"><img class="footer_soc-icon" src="./images/icons/icons.svg#soc-fb"/></a><a class="footer_soc-link" target="_blank" href="https://www.youtube.com/"><img class="footer_soc-icon" src="./images/icons/icons.svg#soc-yt"/></a></div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <div class="btn-top_wrap">
+      <button class="btn-top_body js-btn-up"><img class="btn-top_icon" src="./images/icons/icons.svg#arrowfatup"/></button>
+    </div>
+    <div class="modal-wrap">
+      <div class="container">
+        <div class="modal-form form" id="modal-form-login">
+          <div>
+            <form class="form_body js-form" id="form-login" action="/files/sendMailSMTP.php" method="post">
+              <button class="form_btn-close" data-fancybox-close=""><img class="form_btn-close-icon" src="./images/icons/icons.svg#close"/></button>
+              <h3 class="form_title">Log In</h3>
+              <div class="form_field">
+                <label class="form_label" for="loginName">Login:</label>
+                <input class="form_inp" id="loginName" type="text" name="name" data-req="name" placeholder="Login" autocomplete="username" required="required"/>
+              </div>
+              <div class="form_field">
+                <label class="form_label js-label-pass" for="loginPass">Password:
+                  <button class="form_btn-show-pass js-show-pass" type="button" data-show="false"><img class="form_eye" src="./images/icons/icons.svg#eye"/><img class="form_eye form_eye--not" src="./images/icons/icons.svg#eye-not"/></button>
+                </label>
+                <input class="form_inp" id="loginPass" type="password" name="passsword" data-req="password" placeholder="Password" autocomplete="current-password" required="required"/>
+              </div>
+              <button class="form_btn-subm btn-base" type="submit">Log in</button>
+              <button class="form_link-access js-open-form" data-open="modal-form-signup" data-fancybox-close="">Get access to the site</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-form form" id="modal-form-signup">
+          <div>
+            <form class="form_body js-form" action="" method="">
+              <button class="form_btn-close" data-fancybox-close=""><img class="form_btn-close-icon" src="./images/icons/icons.svg#close"/></button>
+              <h3 class="form_title">Log In</h3>
+              <div class="form_field">
+                <input class="form_inp" id="singnupEmail" type="email" name="signEmail" data-req="email" placeholder="Enter email" required="required"/>
+              </div>
+              <div class="form_field">
+                <div class="form_grecaptcha js-recaptcha" id="recaptcha-1" data-tabindex="0" data-req="grecaptcha"></div>
+              </div>
+              <button class="form_btn-back btn-three js-open-form" data-open="modal-form-login" data-fancybox-close="">Back</button>
+              <button class="form_btn-send btn-base">Send  </button>
+            </form>
+          </div>
+        </div>
+        <div class="modal-send" id="modal-send-cart">
+          <div>
+            <div class="modal-send_body">
+              <button class="modal-send_btn-close" data-fancybox-close=""><img class="modal-send_btn-close-icon" src="./images/icons/icons.svg#close-gray"/></button>
+              <div class="modal-send_img-wrap"><picture><source srcset="img/heart.webp" type="image/webp"><img class="modal-send_img-body" src="img/heart.png"/></picture></div>
+              <h3 class="modal-send_title">Thank you for your wishlist.<br/>We will come back with our best offer. </h3>
+              <p class="modal-send_text">Have a nice day, <span class="modal-send_text--strong">Stationery Distribution!</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-cart js-modal-cart">
+      <div class="modal-cart_overlay">
+        <div class="modal-cart_content">
+          <div class="modal-cart_title">Cart</div>
+          <button class="modal-cart_btn-close js-cart-modal-close"><img class="modal-cart_btn-close-icon" src="./images/icons/icons.svg#close"/></button>
+          <div class="modal-cart_box">
+            <div class="modal-cart_item js-cart-item-tmp" data-id="data-id">
+              <div class="modal-cart_item-prev"><img class="modal-cart_item-img js-product-img" src="" data-img="data-img"/></div>
+              <h6 class="modal-cart_item-title" data-name="data-name"></h6>
+              <p class="modal-cart_item-art" data-art="data-art"></p>
+              <p class="modal-cart_item-quant"> <span data-quant="data-quant">10  </span><span>qty.</span></p>
+              <button class="modal-cart_btn-del js-del-btn-cart-modal"><img class="modal-cart_btn-del-icon" src="./images/icons/icons.svg#trash"/><span>Delete</span></button>
+            </div>
+          </div><a class="modal-cart_btn btn-three" href="/cart.html">Place an order</a>
+          <button class="modal-cart_btn btn-base js-cart-modal-close">Continue shopping</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit&_v=20250513103439" async="async" defer="defer"></script>
+  </body>
+</html>
